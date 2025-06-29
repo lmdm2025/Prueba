@@ -1,7 +1,5 @@
-# Nombre del Proyecto:
+# Nombre del Proyecto: LUM Street
 
 # Descripcion:
 
-Este proyecto es una pagina web basica desarrollada como parte de la materia Laboratorio de Aplicaciones.
-
-La página esta estructurada con HTML semántico y utiliza las etiquetas 'header', 'main' y 'footer' para organizar el contenido. El objetivo es aprender a crear la estructura básica de una página web y prepararla para futuras mejoras con CSS y Javascript
+Este proyecto es una pagina web de ventas de zapatillas importadas realizado por Meza Astrada Agustin y Gosso Lihuel Nicolas
