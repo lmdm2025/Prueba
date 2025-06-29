@@ -1,32 +1,60 @@
 <html lang="es">
 <head>
-<meta charset="UTF-8"> <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-<title>Mi Primer Proyecto</title>
-</head>
-<body>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <title>Lum - Zapatillas Importadas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+<body class="merriweather">
     <header>
-        <h1>Bienvenidos a Mi Proyecto</h1>
-        <h2>Este es un subtítulo en el header</h2>
-        <img src="img/logo.png" alt="Este es el logo del proyecto" width="200" height="200">
+        <h1>Lüm Street</h1>
+        <h2 class="merriweather">Tu próximo paso, con estilo internacional</h2>
     </header>
     <nav>
-        <ul>
-            <li><a href="inicio.html">Inicio</a></li>
+        <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienesSomos.html">Quienes somos</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <main>
         <section>
-        <p>Este es un párrafo de introducción sobre el proyecto. Aquí podés usar <strong>negrita</strong>, <em>cursiva</em>, y <s>tachado</s>.</p> 
+            <h2>Bienvenidos a LUM</h2>
+            <p>Ofrecemos zapatillas importadas con el mejor estilo, calidad y precio. Nuestra pasión por el deporte y el diseño nos impulsa a traerte los mejores modelos internacionales.</p>
+        </section>
+        <section class="seccion">
+            <img src="img/imagen.png" alt="Imagen de una zapatilla importada LUM" width="200" height="200">
+            <img src="img/imagen1.png" alt="Imagen de una zapatilla importada LUM" width="200" height="200">
         </section>
         <section>
-            <img src="img/imagen.png" alt="Esta es la imagen en mi section" width="200" height="200">
+            <h2>¡No te pierdas las mejores ofertas!</h2>
+            <a href="catalogo.html" class="boton">Ver Catálogo</a>
         </section>
+        <form action="https://formspree.io/f/xanjajnb" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="correo">Correo</label>
+            <input type="text" id="correo">
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <label>
+                <textarea name="message"></textarea>
+            </label>
+            <br>
+            <button type="submit">Send</button>
+        </form>
     </main>
     <footer>
-        <p>Este es el pie de página con la información de contacto.</p>
+        <br>
+        <h2>¡Seguinos en nuestras redes sociales!</h2>
+        <p>Instagram:</p>
+        <a href="instagram.com"><img src="img/instagramLogo.png" width="50px" height="50px" class="logoInstagram"></a>
+        <p>Whatsapp: </p>
+        <p>Correo: </p>
+
     </footer>
 </body>
 </html>
