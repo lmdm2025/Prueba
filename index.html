@@ -1,60 +1,80 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/estilos.css">
-    <title>Lum - Zapatillas Importadas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUM - Venta de zapatillas importadas con estilo y calidad. Descubrí las mejores ofertas en Nike, Adidas y más." />
+  <title>Lum - Zapatillas Importadas</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet" />
+</head>
 <body class="merriweather">
-    <header>
-        <h1>Lüm Street</h1>
-        <h2 class="merriweather">Tu próximo paso, con estilo internacional</h2>
-    </header>
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienesSomos.html">Quienes somos</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Bienvenidos a LUM</h2>
-            <p>Ofrecemos zapatillas importadas con el mejor estilo, calidad y precio. Nuestra pasión por el deporte y el diseño nos impulsa a traerte los mejores modelos internacionales.</p>
-        </section>
-        <section class="seccion">
-            <img src="img/imagen.png" alt="Imagen de una zapatilla importada LUM" width="200" height="200">
-            <img src="img/imagen1.png" alt="Imagen de una zapatilla importada LUM" width="200" height="200">
-        </section>
-        <section>
-            <h2>¡No te pierdas las mejores ofertas!</h2>
-            <a href="catalogo.html" class="boton">Ver Catálogo</a>
-        </section>
-        <form action="https://formspree.io/f/xanjajnb" method="POST">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
-            <br>
-            <label for="correo">Correo</label>
-            <input type="text" id="correo">
-            <br>
-            <label for="mensaje">Mensaje</label>
-            <label>
-                <textarea name="message"></textarea>
-            </label>
-            <br>
-            <button type="submit">Send</button>
-        </form>
-    </main>
-    <footer>
-        <br>
-        <h2>¡Seguinos en nuestras redes sociales!</h2>
-        <p>Instagram:</p>
-        <a href="instagram.com"><img src="img/instagramLogo.png" width="50px" height="50px" class="logoInstagram"></a>
-        <p>Whatsapp: </p>
-        <p>Correo: </p>
+  <header>
+      <div class="contenedor-header">
+        <img class="logoMarca" src="img/logoMarca.jpg" alt="Logo de LUM" />
+        <div class="texto-header">
+          <h1 class="merriweather">Lüm Street</h1>
+          <h2 class="merriweather">Tu próximo paso, con estilo internacional</h2>
+        </div>
+      </div>
+  </header>
 
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="quienesSomos.html">Quienes somos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Bienvenidos a <span class="marca">LUM</span></h2>
+      <p class="intro-text">
+        Ofrecemos <strong>zapatillas importadas</strong> con el mejor estilo, calidad y precio.
+        Nuestra pasión por el deporte y el diseño nos impulsa a traerte los mejores modelos internacionales.
+      </p>
+    </section>
+
+    <section class="ofertas">
+      <h2>¡NO TE PIERDAS LAS <span class="marca">MEJORES OFERTAS!</span></h2>
+
+      <div class="producto">
+        <img src="img/zapatillasNike.png" alt="Zapatilla Nike Air Jordan" />
+        <p>Nike Air Jordan | <span class="marca"><strong>A solo 55 USD</strong></span> | Consulta los talles</p>
+      </div>
+
+      <div class="producto">
+        <img src="img/zapatillasAdidas.png" alt="Zapatilla Adidas Country Japan" />
+        <p>Adidas Country Japan | <span class="marca"><strong>A solo 55 USD</strong></span> | Consulta los talles</p>
+      </div>
+
+      <a href="productos.html" class="boton">Ver Catálogo</a>
+    </section>
+    <section class="beneficios">
+        <h2>¿Por qué elegir <span class="marca">LUM?</span></h2>
+        <ul class="intro-text">
+            <li>🚚 Envíos seguros a todo el país</li>
+            <li>✔️ Garantía de calidad para todos nuestros productos</li>
+            <li>🧢 Modelos exclusivos que esperan por vos</li>
+            <li>📞 Ofrecemos atención personalizada</li>
+        </ul>
+    </section>
+  </main>
+    <footer class="footer">
+        <h2>¡Seguinos en nuestras redes sociales!</h2>
+        <div class="redes">
+            <a href="https://www.instagram.com/lumstreet_/">
+            <img src="img/instagramLogo.png" alt="Instagram LUM" width="50" height="50" />
+            </a>
+            <a href="#">
+            <img src="img/wspLogo.webp" alt="Link Logo Whatsapp" width="50" height="50" />
+            </a>
+        </div>
+        <p>© 2025 LUM Street. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

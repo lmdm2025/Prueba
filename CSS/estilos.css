@@ -1,6 +1,7 @@
 body{
     font-size: large;
-    background-color: black;
+    background-color:#ac0202; /* rojo vino tinto */
+    background-position: 100% 0%;
 }
 
 
@@ -14,29 +15,232 @@ body{
 }
 
 
-header{
-    background-color: rgba(255, 0, 0, 0.774);
-    height: 110px;
-    text-align: center;
-    
+header {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contenedor-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoMarca {
+    width: 150px;
+    max-height: 120px;
+    border-radius: 50%;
+}
+.texto-header h1,
+.texto-header h2 {
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-family: fantasy;
 }
 main{
-    background-color: rgba(255, 0, 0, 0.774);
+
+    margin: auto;
+    width: 100%;
 }
 
 main p{
     color: rgb(255, 255, 255);
-    width: 45%;
+    width: 70%;
+    justify-content: left;
 }
 
-section h3{
-    color: rgb(0, 0, 0);
+.intro {
+    background-color: #111; /* Fondo oscuro para contraste */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.774);
 }
 
-footer{
-    background-color: black;
-    width: 100%;
-    height: 200px;
+.intro h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.intro .marca {
+    color: #ff0000; /* resalta el nombre de la marca */
+}
+
+.intro-text {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Merriweather', serif;
+}
+.intro img{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    border-radius: 20%;
+}
+
+.ofertas {
+    background-color: #111; /* Fondo oscuro para contraste */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.774);
+}
+
+.ofertas h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.ofertas .marca {
+    color: #ff0000; /* resalta el nombre de la marca */
+}
+
+.ofertas-text {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Merriweather', serif;
+}
+.ofertas img{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    border-radius: 20%;
+}
+
+
+
+.beneficios {
+    background-color: #111; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.774);
+    list-style: none;
+}
+
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.beneficios li {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.beneficios h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.beneficios .marca {
+    color: #ff0000; 
+}
+
+.beneficios-text {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Merriweather', serif;
+}
+.beneficios img{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    border-radius: 20%;
+}
+.beneficios.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo para sección autores */
+.intro.autores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.foto-autores {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.intro.autores h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.intro.autores .intro-text {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+form label, form input, form textarea, form button {
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer {
+    background-color: #111; 
+    color: white;
+    padding: 60px 20px;
+    text-align: left;
+    max-width: all;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.774);
+    list-style: none;
+}
+
+footer a img {
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 footer h2{
@@ -49,9 +253,9 @@ footer p{
 
 /* NAV CONTAINER */
 nav {
-    background-color: rgba(255, 0, 0, 0.774);
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+
 }
 
 /* LISTA */
@@ -84,7 +288,7 @@ nav {
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 10px 20px;
+    padding: 30px 40px;
     display: inline-block; /* ✅ más flexible que block o flex */
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -98,4 +302,63 @@ nav {
 .boton:hover {
     background-color: #ddd;
     color: black;
+}
+
+/* productos.html */
+
+.catalogo {
+    background-color: #111; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.774);
+    list-style: none;
+}
+
+.catalogo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-producto {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card-producto:hover {
+  transform: scale(1.03);
+}
+
+.card-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-producto h3 {
+  font-size: 1.4rem;
+  margin: 15px 0 10px 0;
+}
+
+.card-producto p {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 15px 0 10px 0;
+
 }
