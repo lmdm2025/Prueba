@@ -54,7 +54,7 @@ main p{
 }
 
 .intro {
-    background-color: #111; /* Fondo oscuro para contraste */
+    background-color: #111; 
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -73,7 +73,7 @@ main p{
 }
 
 .intro .marca {
-    color: #ff0000; /* resalta el nombre de la marca */
+    color: #ff0000;
 }
 
 .intro-text {
@@ -90,7 +90,7 @@ main p{
 }
 
 .ofertas {
-    background-color: #111; /* Fondo oscuro para contraste */
+    background-color: #111; 
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -109,7 +109,7 @@ main p{
 }
 
 .ofertas .marca {
-    color: #ff0000; /* resalta el nombre de la marca */
+    color: #ff0000; 
 }
 
 .ofertas-text {
@@ -250,15 +250,12 @@ footer h2{
 footer p{
     color: white
 }
-
-/* NAV CONTAINER */
 nav {
     padding: 20px 0;
     text-align: center;
 
 }
 
-/* LISTA */
 .nav-list {
     list-style: none;
     padding: 0;
